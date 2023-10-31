@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/noteFragment">
+
+    <fragment
+        android:id="@+id/todoFragment"
+        android:name="com.example.notetodoapp.views.fragments.TodoFragment"
+        android:label="fragment_todo"
+        tools:layout="@layout/fragment_todo" >
+        <action
+            android:id="@+id/action_todoFragment_to_addEditNoteActivity"
+            app:destination="@id/addEditNoteActivity" />
+        <action
+            android:id="@+id/action_todoFragment_to_noteFragment"
+            app:destination="@id/noteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/noteFragment"
+        android:name="com.example.notetodoapp.views.fragments.NoteFragment"
+        android:label="NoteFragment"
+        tools:layout="@layout/fragment_note" >
+        <action
+            android:id="@+id/action_noteFragment_to_addEditNoteActivity"
+            app:destination="@id/addEditNoteActivity" />
+        <action
+            android:id="@+id/action_noteFragment_to_todoFragment"
+            app:destination="@id/todoFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/addEditNoteActivity"
+        android:name="com.example.notetodoapp.views.AddEditNoteActivity"
+        android:label="activity_add_edit_note"
+        tools:layout="@layout/activity_add_edit_note" />
+</navigation>

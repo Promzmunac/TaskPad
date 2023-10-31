@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB01</color>
+    <color name="purple_500">#FFBB00</color>
+    <color name="purple_700">#FB6542</color>
+    <color name="teal_200">#375E97</color>
+    <color name="teal_700">#3F681C</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="paleWhite">#F3EBEB</color>
+    <color name="red">#FD0303</color>
+
+    <color name="Blue">#4c68d7</color>
+
+
+    <color name="zcashWhite_light">#EDEDED</color>
+    <color name="zcashBlack_87">#DD000000</color>
+    <color name="zcashBlack_dark">#171717</color>
+
+    <color name="zcashGreen">#66BB6A</color>
+    <color name="zcashBlueDark">#4A90E2</color>
+
+    <!-- yellows -->
+    <color name="zcashYellow_light">#FFCF4A</color>
+    <color name="zcashYellow">#FFB900</color>
+    <color name="zcashYellow_dark">#FFAA17</color>
+
+
+</resources>
