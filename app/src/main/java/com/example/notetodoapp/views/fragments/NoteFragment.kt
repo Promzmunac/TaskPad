@@ -13,12 +13,12 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.notetodoapp.databinding.FragmentNoteBinding
 import com.example.notetodoapp.model.dc.Note
 import com.example.notetodoapp.utils.swipeToDelete
 import com.example.notetodoapp.utils.swipeToEdit
 import com.example.notetodoapp.viewmodel.NoteViewModel
 import com.example.notetodoapp.views.AddEditNoteActivity
-import com.example.notetodoapp.databinding.FragmentNoteBinding
 import com.example.notetodoapp.views.adapter.NoteClickDeleteInterface
 import com.example.notetodoapp.views.adapter.NoteClickInterface
 import com.example.notetodoapp.views.adapter.NoteRVAdapter
@@ -61,14 +61,14 @@ class NoteFragment : Fragment(), NoteClickInterface, NoteClickDeleteInterface {
             }
         })
 
+        // Set up swipe-to-delete and swipe-to-edit functionality
+        setUpSwipeToDelete()
+        setUpSwipeToEdit()
+
         addFAB.setOnClickListener {
             val intent = Intent(requireContext(), AddEditNoteActivity::class.java)
             startActivity(intent)
         }
-
-        // Set up swipe-to-delete and swipe-to-edit functionality
-        setUpSwipeToDelete()
-        setUpSwipeToEdit()
     }
 
     private fun setUpSwipeToDelete() {
